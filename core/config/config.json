@@ -1,0 +1,38 @@
+{
+  "development": {
+    "config_id": "development",
+    "app_name": "API Node.js for Workshop EPSI",
+    "app_desc": "API Node.js for Workshop EPSI",
+    "root": "http://localhost:3000",
+    "node_port": 3000,
+    "version": "v1",
+    "db": "mongodb+srv://workshop:chocapic@workshop-epsi.hsh42.mongodb.net/test"
+  },
+  "testing": {
+    "config_id": "testing",
+    "app_name": "API Node.js for Workshop EPSI",
+    "app_desc": "API Node.js for Workshop EPSI",
+    "root": "http://localhost:3000",
+    "node_port": 3000,
+    "version": "v1",
+    "db": "mongodb+srv://workshop:chocapic@workshop-epsi.hsh42.mongodb.net/test"
+  },
+  "staging": {
+    "config_id": "staging",
+    "app_name": "API Node.js for Workshop EPSI",
+    "app_desc": "API Node.js for Workshop EPSI",
+    "root": "http://localhost:3000",
+    "node_port": 3000,
+    "version": "v1",
+    "db": "mongodb+srv://workshop:chocapic@workshop-epsi.hsh42.mongodb.net/test"
+  },
+  "production": {
+    "config_id": "production",
+    "app_name": "API Node.js for Workshop EPSI",
+    "app_desc": "API Node.js for Workshop EPSI",
+    "root": "https://api.domain.com",
+    "node_port": 3000,
+    "version": "v1",
+    "db": "mongodb+srv://workshop:chocapic@workshop-epsi.hsh42.mongodb.net/test"
+  }
+}
