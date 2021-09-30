@@ -11,6 +11,11 @@ const Log = require('../models/logs.model')
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
+function roundDecimal(nombre, precision){
+    var precision = precision || 2;
+    var tmp = Math.pow(10, precision);
+    return Math.round( nombre*tmp )/tmp;
+}
 
 //Routes
 module.exports = {
@@ -24,7 +29,7 @@ module.exports = {
         var email = {"objet":body.object,"text":body.content};
         //console.log(JSON.stringify(email))
         // spawn new child process to call the python script
-        const python = spawn('python3', ['/home/ubuntu/workshop-api/v1/python/app2.py', `${JSON.stringify(email).toString()}`]);
+        const python = spawn('python3', ['/home/ubuntu/workshop-api/v1/python/app.py', `${JSON.stringify(email).toString()}`]);
         // collect data from script
         python.stdout.on('data', function (data) {
             console.log('Pipe data from python script ...');
@@ -40,8 +45,12 @@ module.exports = {
             //var result = dataToSend.toString()
             //console.log(result)
             let result = JSON.parse(dataToSend.toString())
-            console.log(result)
-            var key = "F0isMOeIrU3QKY7qIesu9p2SguUC0Yvz"
+            var key = "F0isMOeIrU3QKY7qIesu9p2SguUC0Yvz";
+            var positivite = Math.floor((100-result.positivite)/4);
+            var alarmant = Math.floor((100-result.alarmant)/3);
+            var orthographe = Math.floor((100-result.orthographe)/3);
+            var engageant = Math.floor((100-result.engagement)/3);
+            var total = engageant+orthographe+alarmant//+positivite
             var test = new Log({
                 mail:{
                     sender:sender,
@@ -49,10 +58,11 @@ module.exports = {
                     object: crypto.encrypt(body.object,key)
                 },
                 results:{
-                    total:getRandomInt(100),
-                    sentiments:getRandomInt(33),
-                    orthographe: getRandomInt(33),
-                    imperatif: getRandomInt(33)
+                    total:total,
+                    //positivite: positivite,
+                    orthographe: orthographe,
+                    alarmant: alarmant,
+                    engageant: engageant
                 }
             })
             test.save((err,logSaved)=>{
@@ -66,7 +76,9 @@ module.exports = {
         Log.findById(req.query.id,(err,logFound)=>{
             if(err)console.log(err);
             var logretour = {
-                return:logFound.results
+                //{"title":"Positivité","value":logFound.results.positivite,"color":"#E38627"}
+                result:[{"title":"Orthographe","value":logFound.results.orthographe,"color":"#C13C37"},{"title":"Engageant","value":logFound.results.engageant,"color":"#6A2135"},{"title":"Alarmant","value":logFound.results.alarmant,"color":"#38EE0C"}],
+                total:logFound.results.total
             }
             return res.status(200).json(success(logretour))
         })

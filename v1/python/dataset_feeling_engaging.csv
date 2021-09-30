@@ -18,4 +18,14 @@ id,sentiment,message
 17,not engaging,Voici la lettre d’information sur l’actualité de la botanique francophone
 18,not engaging,Cette lettre présente une sélection des articles et événements publiés
 19,not engaging,Vous pouvez consulter votre échéancier
-20,engaging,Merci de bien vouloir répondre à notre enquête 
+20,engaging,Merci de bien vouloir répondre à notre enquête
+21,engaging,Dépêchez-vous le nombre de lots à gagner est limité!
+22,engaging,Réponds maintenant!
+23,engaging,Cette enquête vise à améliorer le service à nos utilisateurs.
+24,engaging,Pour vous inscrire : rendez-vous ici
+25,engaging,Nous vous invitons à répondre à une enquête de satisfaction qui nous permettra de poursuivre notre démarche d’amélioration continue
+26,engaging,Nous avons besoin de votre avis
+27,not engaging,Nous vous informons que
+28,not engaging,Pour consulter le document : Connectez-vous à votre espace personnel à l'aide de vos identifiants
+29,not engaging,Vous pouvez à tout moment et facilement consulter et télécharger votre facture en vous rendant sur votre Espace Abonné
+30,engaging,Vous pouvez venir le récupérer dès cet après midi

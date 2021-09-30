@@ -20,11 +20,14 @@ const LogsSchema = new Schema({
         orthographe:{
             type: Number,
         },
-        sentiments:{
+        positivite:{
             type: Number,
         },
-        imperatif:{
+        alarmant:{
             type: Number,
+        },
+        engageant:{
+            type: Number
         }
     }
 },{timestamps:true});
