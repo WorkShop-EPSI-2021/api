@@ -17,6 +17,7 @@ exports.router = (function () {
   Router.route('/examples/error').get(Examples.error);
   Router.route('/examples/validator/:data').get(Examples.validator);
   Router.route('/scan').post(Scan.scan)
+  Router.route('/return').get(Scan.retour)
 
 
   return Router;

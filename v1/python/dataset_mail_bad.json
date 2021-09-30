@@ -1,0 +1,46 @@
+{
+    "mails" : 
+    [
+        {
+            "id": 1,
+            "objet" : "Support NETFLIX", 
+            "text": "Bonjour, Nous n'avons pas pu autoriser votre paiement pour le prochain cycle de facturation de votre abonnement. Nous serions bien évidemment très heureux de vous compter à nouveau parmi nous. cliquez simplement sur, réactivez simplement votre abonnement pour profiter des meilleurs films et séries TV sans interruption. RÉACTIVER L'ABONNEMENT. Nous sommes là pour vous aider. Pour plus d'informations, consultez le Centre d'aide ou contactez-nous. L'équipe Netflix"
+        }, 
+        {
+            "id": 2,
+            "objet": "Disney",
+            "text" : "Souhaitez-vous garder votre compte Disney+ ? Nous venons de détecter que votre moyen de paiement n’est plus valide. Sans nouvelle source de paiement de votre part, votre abonnement sera résilié et vous serez facturé 29.99€ conformément à la Loi sur la consommation adoptée en Février 2014.Configuration de paiement. Nous suivre. Pour plus d’informations, Veuillez consulter notre Centre d’aide."
+        },
+        {
+            "id": 3,
+            "objet" : "Crédit Agricole", 
+            "text": "Bonjour, Lors de votre dernier achat ,vous avez été averti par un message qui vous informe de l'obligation d'adhérer à la nouvelle réglementation Concernant la fiabilité pour les achats par carte bancaire sur internet . la mise en place d'un arrêt pour vos futurs achats. A ce jour, nous n'avons pas reçu d'adhésion de votre part et nous sommes au regret de vous informer que vous ne pouvez plus utiliser votre carte sur internet. Faites votre demande d'adhésion en ligne en cliquant ici Crédit agricole ca Ce message est généré automatiquement, merci de ne pas y répondre, il ne pourra pas être lu. Société Anonyme à Directoire et Conseil de Surveillance au capital de 4 046 407 595 euros Siège social et adresse postale : 115, rue de Sèvres  75 275 Paris Cedex 06 RCS Paris 421 100 645  Code APE 6419Z, intermédiaire d'assurance, immatriculé à l'ORIAS sous le n° 07 023 424"
+        },
+        {
+            "id": 4,
+            "objet" : "Amazon", 
+            "text": "Félicitations dorios! Vous avez la chance unique de participer à notre tombola et de gagner un bon d'achat de 500 € chez Amazon! Nous distribuons les bon d'achats à nos participants. Confirmez votre participation en cliquant sur le bouton ci-dessous et gagnez votre bon d'achat de 500 € chez Amazon! Dépêchez-vous - cette campagne se termine dès que tous les bons d'achat seront."
+        },
+        {
+            "id": 5,
+            "objet" : "Xiaomi Scooter 3", 
+            "text": "Félicitations, vous êtes l'heureux gagnant! Dépêchez-vous, le nombre de lots que vous pouvez gagner est limité ! Toutes nos félicitations ! Vous avez été sélectionné pour participer à cette enquête. Cela ne prend qu'une minute et vous obtenez un prix fantastique : le nouveau scooter électrique Xiaomi Mi! OBTENEZ LE MAINTENANT Chaque jour, nous sélectionnons au hasard 10 utilisateurs pour avoir la chance de gagner de superbes prix. Le prix d'aujourd'hui est un nouveau scooter électrique Xiaomi Mi! 10 heureux gagnants vont uniquement à ceux qui vivent en France! Cette enquête vise à améliorer le service à nos utilisateurs. Dépêchez-vous, le nombre de lots que vous pouvez gagner est limité!"
+        },
+        {
+            "id": 6,
+            "objet" : "Nintendo Switch", 
+            "text": "Dépêchez-vous, le nombre de lots à gagner est limité! Réponds maintenant! Répondez et gagnez! 10 Heureux Gagnants Uniquement pour ceux qui vivent en France! Répondez au sondage * Cette enquête vise à améliorer le service à nos utilisateurs. Nous sélectionnons au hasard 10 utilisateurs pour leur donner la chance de gagner des prix fantastiques. Le prix d'aujourd'hui est un nouvel Nintendo Switch! Pour arrêter ça, allez ici ou écrivez à: 616 Corporate Way Ste.2-9092 Valley Cottage, NY 10989"
+        },
+        {
+            "id": 7,
+            "objet" : "Julie Taglioni - Nutri Obs", 
+            "text": "xxx"
+        },
+        {
+            "id": 8,
+            "objet" : "xxx", 
+            "text": "xxx"
+        }
+        
+    ]
+}

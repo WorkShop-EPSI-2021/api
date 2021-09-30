@@ -1,0 +1,18 @@
+id,sentiment,message
+1,alarming,votre compte a été bloqué
+2,alarming,nous sommes au regret de vous informer
+3,alarming,vous ne pouvez plus utiliser votre carte sur internet
+4,alarming,vos moyens de paiement
+5,alarming,Dépêchez-vous le nombre de lots à gagner est limité!
+6,alarming,Nous n'avons pas pu autoriser votre paiement pour le prochain cycle de facturation de votre abonnement
+7,alarming,Vous avez la chance unique de participer à notre tombola et de gagner un bon d'achat
+8,alarming,Félicitations vous êtes l'heureux gagnant!
+9,alarming,Dépêchez-vous le nombre de lots que vous pouvez gagner est limité !
+10,alarming,Toutes nos félicitations !
+11,not alarming,Afin de finaliser votre candidature vous devez valider votre adresse e-mail en cliquant simplement sur le bouton bleu ci-dessous
+12,alarming,vous êtes sélectionnés parmi les cent personnes
+13,not alarming,ne manquez pas les 2 sessions dédiées aux applications
+14,not alarming,Valider ma candidature
+15,not alarming,Voici la lettre d’information sur l’actualité de la botanique francophone
+16,not alarming,Cette lettre présente une sélection des articles et événements publiés
+17,not alarming, Nous serions bien évidemment très heureux de vous compter à nouveau parmi nous.

@@ -9,4 +9,4 @@ text = json.loads(mailText)
 # the result is a Python dictionary:
 #print(text["text"])
 
-print('{"score1": "15%", "scores2": "80%"}')
+print('{"total": 35, "sentiments": 10, "imperatif": 15, "orthographe": 10}')

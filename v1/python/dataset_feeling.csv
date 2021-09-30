@@ -1,0 +1,12 @@
+id,sentiment,message
+1,negative,je ne me sens pas bien
+2,negative,malheureusement nous ne pouvons pas accéder
+3,negative,nous sommes désolés de vous informer
+4,negative,A ce jour nous n'avons pas reçu d'adhésion de votre part 
+5,positive,c'est génial
+6,positive,nous sommes heureux de vous annoncer
+7,positive,bravo vous avez gagné
+8,negative,nous sommes au regret de vous annoncer
+9,positive,félicitation! Vous êtes l'heureux gagnant
+10,positive, Nous serions bien évidemment très heureux de vous compter à nouveau parmi nous.
+11,positive,Il y a des femmes et des hommes qui font ça et qui ne le regrettent pas.
