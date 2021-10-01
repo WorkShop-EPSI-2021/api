@@ -77,7 +77,7 @@ module.exports = {
             if(err)console.log(err);
             var logretour = {
                 //{"title":"Positivité","value":logFound.results.positivite,"color":"#E38627"}
-                result:[{"title":"Orthographe","value":logFound.results.orthographe,"color":"#C13C37"},{"title":"Engageant","value":logFound.results.engageant,"color":"#6A2135"},{"title":"Alarmant","value":logFound.results.alarmant,"color":"#38EE0C"}],
+                result:[{"title":"Orthographe","value":logFound.results.orthographe,"color":"#C13C37"},{"title":"Engageant","value":logFound.results.engageant,"color":"#6A2135"},{"title":"Alarmant","value":logFound.results.alarmant,"color":"#E38627"}],
                 total:logFound.results.total
             }
             return res.status(200).json(success(logretour))
