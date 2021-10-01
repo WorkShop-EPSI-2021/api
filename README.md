@@ -1,87 +1,48 @@
-# Node.js API Starter
-This Node.js API Starter is a starter pack to quickly launch a Node.js/Express API application created by [monarch studio](https://www.monarchstudio.fr) and hosted on [.creative](https://creative.monarchstudio.fr).
+# Projet C'MAIL
 
-Start coding, no server configuration, save time of your process.
+## Objectif 
 
-Some usefull utils and middlewares includes ✌️
+Le projet consiste en une extension web qui analyse le contenu du mail et retourne à l'utilisateur 
+le résultat de l'analyse du texte sous différents aspects pour lui permettre de .
 
-## Usage
+Le projet se décompose suivant les 5 parties suivantes :
+* le front-end de l'extension, dont le code se trouve [ici](https://github.com/WorkShop-EPSI-2021/extension-new/tree/testronan), 
+* le site web de présentation du projet, ainsi que des vidéos externes de sensibilisation à la sécurité des mails : le code se trouve [ici](https://github.com/WorkShop-EPSI-2021/front), 
+* le back end qui prend le texte du mail, exécute les différentes analyses et retourne les résultats à l'API : code [ici](https://github.com/WorkShop-EPSI-2021/script)  
+* l'API qui fait le pont entre le front-end et le back-end : le code est [ici](https://github.com/WorkShop-EPSI-2021/api)
+* Une base de données enregistrant les résultats des analyses
 
-We assume you know how Node.js and NPM works if you're using this Starter Pack. It's for developers who already know Node.js well. If not, please refer to the Node.js documentation.
 
-### Node.js
+## Installation et utilisation de l'extension Chrome
 
-Before all, you need [Node.js](https://nodejs.org/en/) and NPM installed and up to date.
+Les étapes à suivre sont les suivantes :
+Pour installer et utiliser chrome://extensions
+1. Télécharger le projet de l'extension qui se trouve [ici](https://github.com/WorkShop-EPSI-2021/extension-new/tree/testronan) 
+puis dézipper le dossier
+2. Ouvrir le navigateur Chrome et aller à l'URL suivante : `chrome://extensions`
+3. Activer le mode développeur (bouton slide dans la barre juste au-dessus des extensions) 
+4. Cliquer sur 'charger l'extension non empaquetée'
+5. Sélectionner le dossier dézippé de l'extension  
 
-### Database
 
-The app include the ODM [Mongoose](https://mongoosejs.com/) for Mongo database management. 
+## Site web d'informations
 
-You can choose about two methods to connect to database :
+Le site web a été réalisé avec le framework REACT. Il est hébergé sur un serveur et accessible via ce 
+[lien](https://tanjobi.fr/) 
 
-The Mongoose Client Connection
-```Javascript
-db.mongooseConnection()
-```
-The original MongoDB Client Connection
-```Javascript
-db.mongoConnection()
-```
+## Suivi de l'activité
 
-## Configuration
+Afin de suivre l'activité et pouvoir générer des statistiques sur les résultats des analyses de mails,
+une base de données enregistre les résultats obtenus par l'ananlyse.
 
-Before running your app, edit the `config.json` file in `./core/config` with your app description.
-You can also edit the `ecosystem.config.js` file for production mode.
+## La sécurité et la RGPD
 
-## Installation
+* Le projet tente en particulier d'apporter une solution à la technique de hameçonnage (ou phishing) par mail
+en analysant le contenu du mail avant que l'utilisateur ne clique sur un lien malicieux
+* Le site analyse uniquement le texte des mails que l'utilisateur souhaite faire analyser
+* Aucune donnée identifiant directement ou indirectement l'utilisateur n'est stockée, seuls les résultats de l'analyse sont enregistrés
+* Les données qui transitent sont chiffrées via le protocole https
 
-### Init
+# Auteurs
 
-If you run the app for the first time, you need to run this command.
-
-Development mode :
-
-```bash
-npm run dev-init
-```
-Production mode :
-```bash
-npm run prod-init
-```
-
-### Run the app
-After the init command, to start the app you can run this command.
-
-```bash
-npm run dev
-```
-Production mode :
-```bash
-npm run start
-```
-The app start listening  at http://localhost:3000/v1
-
-You can easily change the version of your api & base URL in the `config.json` file.
-
-## Examples
-
-You can see some usage examples in `controllers/examples.controller.js` like how to return a success, an object, an error or how to use the `validators` methods.
-
-## API Auth
-
-This starter includes an auth middleware to protect your API. Uncomment the lines in `app.js` to use it. This middleware :
-* Verify the headers
-* Compare the time between each request sending
-* Create and compare the secure signature sent by client
-
-## Finished
-
-And that's it ! Your can now code your features, your server is running correctly. 💪
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-Free for all.
+CORBIER Zoé, EBERST Emmanuel, MORIN Alexandre, SONZOGNI Dorian, THIEBAUT Ronan, WEHREY Alexy
